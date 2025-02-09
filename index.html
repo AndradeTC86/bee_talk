@@ -126,11 +126,11 @@
                 <div class="contact-methods">
                     <div>
                         <h3>Agende seu teste de nivelamento</h3>
-                        <form>
-                            <input type=""text" placeholder="Seu nome:" required/>
-                            <input type=""email" placeholder="Seu e-mail:" required/>
-                            <input type=""tel" placeholder="Seu telefone:" required />
-                            <select name="idioma" required>
+                        <form id="form-contact">
+                            <input type=""text" placeholder="Seu nome:" id="nome-aluno" required/>
+                            <input type=""email" placeholder="Seu e-mail:" id="email-aluno" required/>
+                            <input type=""tel" placeholder="Seu telefone:" id="telefone-aluno" required />
+                            <select name="idioma" id="idioma-escolhido" required>
                                 <option value="ingles">Inglês</option>
                                 <option value="espanhol">Espanhol</option>
                                 <option value="frances">Francês</option>
@@ -140,9 +140,16 @@
                                 <option value="japones">Japonês</option>
                                 <option value="mandarim">Mandarim</option>
                             </select>
-                            <textarea placeholder="Informe o seu objetivo com o idioma:" required></textarea>
+                            <input type="time" placeholder="Horário de contato de:" id="horario-inicial" required/>
+                            <input type="time" placeholder="Horário de contato até:" id="horario-final" required/>
+                            <p class="error-message">
+                                O horário final não pode ser anterior ao horário inicial
+                            </p>
+                            <textarea placeholder="Informe o seu objetivo com o idioma:" id="objetivo-aula" required></textarea>
                             <button type="submit">Enviar</button>
                         </form>
+                        <p class="success-message">            
+                        </p>
                     </div>
                     <div>
                         <h3>Nossas redes sociais</h3>
@@ -182,6 +189,7 @@
                     &copy; Bee Talk - Todos os direitos reservados - 2025
                 </p>
             </div>
-        </footer>    
+        </footer>
+        <script src="./scripts.js"></script>    
     </body>
 </html>
