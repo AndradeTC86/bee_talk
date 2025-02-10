@@ -196,3 +196,18 @@ footer {
 .chines {    
     background-color: yellowgreen;   
 }
+
+.success-message{
+    background-color: #27ae60;
+    padding: 16px;
+    color: #fff;
+    display: none;
+}
+
+.error-message{
+    background-color: #e74c3c;
+    font-size: 12px;
+    padding: 8px;
+    color: #fff;
+    display: none;
+}
