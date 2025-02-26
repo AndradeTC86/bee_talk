@@ -3,8 +3,6 @@ let nomeAluno = document.getElementById('nome-aluno')
 let emailAluno = document.getElementById('email-aluno')
 let telefoneAluno = document.getElementById('telefone-aluno')
 let idiomaEscolhido = document.getElementById('idioma-escolhido')
-let horarioInicial = document.getElementById('horario-inicial')
-let horarioFinal = document.getElementById('horario-final')
 let objetivoAula = document.getElementById('objetivo-aula')
 
 let formValido = false
@@ -20,8 +18,6 @@ form.addEventListener('submit', function(event) {
 
     nomeAluno.value = ''
     emailAluno.value = ''
-    telefoneAluno.value = ''        
-    horarioInicial.value = ''
-    horarioFinal.value = ''
+    telefoneAluno.value = ''
     objetivoAula.value = ''    
 })
